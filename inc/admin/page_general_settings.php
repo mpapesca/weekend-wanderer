@@ -2,57 +2,57 @@
 class WDWT_general_settings_page_class {
 	public $options;
 		function __construct(){
-		$this->options = array( 
-			
+		$this->options = array(
+
 			/*--- CUSTOM CSS ---*/
-			'custom_css_enable' => array( 
-				'name' => 'custom_css_enable', 
-				'title' => __( 'Custom CSS', "business-elite" ), 
-				'type' => 'checkbox_open', 
-				'description' => __('Custom CSS will change the visual style of the website. The CSS code provided here can be applied to any page or post.',"business-elite"), 
+			'custom_css_enable' => array(
+				'name' => 'custom_css_enable',
+				'title' => __( 'Custom CSS', "business-elite" ),
+				'type' => 'checkbox_open',
+				'description' => __('Custom CSS will change the visual style of the website. The CSS code provided here can be applied to any page or post.',"business-elite"),
 				'show' => array('custom_css_text'),
 				'hide' => array(),
-				'section' => 'general_main', 
-				'tab' => 'general', 
+				'section' => 'general_main',
+				'tab' => 'general',
 				'default' => false,
 				'customizer' => array()
 			),
-			'custom_css_text' => array( 
-				'name' => 'custom_css_text', 
-				'title' => '', 
-				'type' => 'textarea', 
-				'sanitize_type' => 'css', 
-				'description' => __('Provide the custom CSS code below.', "business-elite"), 
-				'section' => 'general_main',  
-				'tab' => 'general', 
+			'custom_css_text' => array(
+				'name' => 'custom_css_text',
+				'title' => '',
+				'type' => 'textarea',
+				'sanitize_type' => 'css',
+				'description' => __('Provide the custom CSS code below.', "business-elite"),
+				'section' => 'general_main',
+				'tab' => 'general',
 				'default' => '',
-				'customizer' => array()      
-			),			
-			
-					
+				'customizer' => array()
+			),
+
+
 			/*--- BLOG STYLE ---*/
 			'blog_style' => array(
-				'name' => 'blog_style', 
-				'title' =>  __( 'Blog Style post format', "business-elite" ), 
-				'type' => 'checkbox', 
-				'description' => __('Check the box to have short previews for the homepage/index posts.', "business-elite"), 
-				'section' => 'general_main', 
-				'tab' => 'general', 
+				'name' => 'blog_style',
+				'title' =>  __( 'Blog Style post format', "business-elite" ),
+				'type' => 'checkbox',
+				'description' => __('Check the box to have short previews for the homepage/index posts.', "business-elite"),
+				'section' => 'general_main',
+				'tab' => 'general',
 				'default' => true,
-				'customizer' => array()           
-			), 	
+				'customizer' => array()
+			),
 			/*--- GRAB IMAGE ---*/
 			'grab_image' => array(
 				'name' => 'grab_image',
 				'title' =>  __( 'Grab the first post image', "business-elite" ),
 				'type' => 'checkbox',
-				'description' => __('Enable this option if you want to use the images that are already in your post to create a thumbnail without using custom fields. In this case thumbnail images will be generated automatically using the first image of the post. Note that the image needs to be hosted on your own server.', "business-elite"), 
+				'description' => __('Enable this option if you want to use the images that are already in your post to create a thumbnail without using custom fields. In this case thumbnail images will be generated automatically using the first image of the post. Note that the image needs to be hosted on your own server.', "business-elite"),
 				'section' => 'general_main',
 				'tab' => 'general',
 				'default' => true,
 				'customizer' => array()
-			),  		
-				
+			),
+
 			/*--- DATE ---*/
 			'date_enable' => array(
 				"name" => "date_enable",
@@ -63,7 +63,7 @@ class WDWT_general_settings_page_class {
 				'tab' => 'general',
 				'default' => true,
 				'customizer' => array()
-			),	
+			),
 			/*--- Headings ---*/
 			'single_title_bg' => array(
 				"name" => "single_title_bg",
@@ -74,33 +74,33 @@ class WDWT_general_settings_page_class {
 				'tab' => 'general',
 				'default' => true,
 				'customizer' => array()
-			),			
+			),
 
 			/*--- FOOTER ---*/
 			'footer_text_enable' => array(
-				"name" => "footer_text_enable", 
+				"name" => "footer_text_enable",
 				"title" => __( 'Information in the Footer', "business-elite"),
-				'type' => 'checkbox_open', 
+				'type' => 'checkbox_open',
 				"description" => __('Check the box to display custom HTML for the footer.', "business-elite"),
-				'section' => 'general_main',  
+				'section' => 'general_main',
 				'show' => array('footer_text'),
 				'hide' => array(),
-				'tab' => 'general', 
+				'tab' => 'general',
 				'default' => true,
-				'customizer' => array()  
+				'customizer' => array()
 			),
-			'footer_text' => array( 
-				"name" => "footer_text", 
+			'footer_text' => array(
+				"name" => "footer_text",
 				"title" => __( 'Information in the Footer', "business-elite"),
-				'type' => 'textarea', 
-				"sanitize_type" => "sanitize_footer_html_field", 
+				'type' => 'textarea',
+				"sanitize_type" => "sanitize_footer_html_field",
 				'width' => '450',
 				'height'=> '200',
 				"description" => __('Here you can provide the HTML code to be inserted in the footer of your web site.', "business-elite"),
-				'section' => 'general_main', 
-				'tab' => 'general', 
+				'section' => 'general_main',
+				'tab' => 'general',
 				'default' => 'WordPress Themes by <a href="'.WDWT_HOMEPAGE.'" target="_blank" title="Web-Dorado">Web-Dorado</a>',
-				'customizer' => array()  
+				'customizer' => array()
 			),
 			/*--- FIX MENU ---*/
 			'fixed_menu' => array(
@@ -140,12 +140,12 @@ class WDWT_general_settings_page_class {
 				'input_size' => '2',
 				'customizer' => array()
 			),
-			/*--- LOGO ---*/	
+			/*--- LOGO ---*/
 			'logo_type' => array(
-				"name" => "logo_type", 
-				"title" => __("Logo type", "business-elite"), 
-				'type' => 'radio_open', 
-				"description" => "", 
+				"name" => "logo_type",
+				"title" => __("Logo type", "business-elite"),
+				'type' => 'radio_open',
+				"description" => "",
 				'valid_options' => array(
 					'none' => 'None',
 					'image' => 'Image',
@@ -153,36 +153,36 @@ class WDWT_general_settings_page_class {
 				),
 				'show' => array('image'=>'logo_img', 'text' => 'logo_text'),
 				'hide' => array(),
-				'section' => 'general_header', 
-				'tab' => 'general', 
+				'section' => 'general_header',
+				'tab' => 'general',
 				'default' => 'text',
-				'customizer' => array()  
+				'customizer' => array()
 			),
 			'logo_img' => array(
-				'name' => 'logo_img', 
-				'title' => __( 'Logo', "business-elite" ), 
+				'name' => 'logo_img',
+				'title' => __( 'Logo', "business-elite" ),
 				"sanitize_type" => "esc_url_raw",
-				'type' => 'upload_single', 
-				'description' => __('Upload custom logo image.',"business-elite"), 
-				'section' => 'general_header',  
-				'tab' => 'general', 
+				'type' => 'upload_single',
+				'description' => __('Upload custom logo image.',"business-elite"),
+				'section' => 'general_header',
+				'tab' => 'general',
 				'default' => '',
-				'customizer' => array()           
+				'customizer' => array()
 			),
-			'logo_text' => array( 
-				"name" => "logo_text", 
-				"title" => __("Logo Text", "business-elite"), 
-				'type' => 'textarea', 
-				"sanitize_type" => "sanitize_text_field", 
+			'logo_text' => array(
+				"name" => "logo_text",
+				"title" => __("Logo Text", "business-elite"),
+				'type' => 'textarea',
+				"sanitize_type" => "sanitize_text_field",
 				"description" => __("Provide with a custom text", "business-elite"),
-				'section' => 'general_header',  
-				'tab' => 'general', 
-				'default' => 'Business' ,
-				'customizer' => array()  
+				'section' => 'general_header',
+				'tab' => 'general',
+				'default' => 'The Weekend Wanderer' ,
+				'customizer' => array()
 			),
-			
+
 		);
-	
+
 
 	}
 }
